@@ -9,7 +9,7 @@
 :root {
   --primary-color: #f5f0ee;
   --accent-color: #00254e;
-
+  --tertiary-color: #017bb3;
   --primary-font-color: #000815;
   --secondary-font-color: #ffffff;
   --primary-font-family: "Nunito Sans";
@@ -36,6 +36,26 @@
   max-width: 930px;
   margin: auto;
 }
+
+.flex-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stylish-heading {
+  font-family: "Niconne";
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--tertiary-color);
+  margin-bottom: 8px;
+}
+
+.section-spacing {
+  padding: 80px 0;
+}
+
 .appointments {
   display: flex;
   justify-content: space-between;
@@ -153,18 +173,190 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 24px 0;
 }
 
-.banner h1 {
+.heading-primary {
   font-size: 44px;
   font-family: var(--secondary-font-family);
   font-weight: 400;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
 }
 
-.banner p {
+.description-primary {
   font-size: 16px;
   font-family: var(--primary-font-family);
   font-weight: 400;
   text-align: center;
   width: 75%;
+  margin-bottom: 16px;
+}
+
+.btn-primary {
+  padding: 12px 24px;
+  border-radius: 10px;
+  background: var(--secondary-font-color);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-family: var(--primary-font-family);
+  font-size: 16px;
+
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.btn-blue {
+  background: var(--accent-color);
+  color: var(--primary-color);
+  transition: all 0.3s;
+  margin: auto;
+}
+
+.btn-blue:hover {
+  background: var(--primary-font-color);
+}
+
+.sml-btn {
+  min-width: 189px;
+}
+
+/*---------------------Tutorial Section------------------*/
+
+.tutorial-section-desc {
+  padding-bottom: 72px;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
+  justify-items: center;
+}
+
+.grid-box img {
+  width: 100%;
+}
+
+.grid-item {
+  padding: 0 15px;
+}
+
+.grid-item p {
+  font-size: 22px;
+  font-family: var(--secondary-font-family);
+  text-align: center;
+  margin: 24px 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
+}
+
+/*----------------Ring Converter-------------*/
+
+.ring-converter-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-one {
+  margin-bottom: 40px;
+}
+.field-two {
+  margin-bottom: 24px;
+  text-align: center;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+.field-three {
+  margin-bottom: 32px;
+}
+.field-four {
+  margin-bottom: 16px;
+}
+
+.form-field label {
+  color: var(--primary-font-color);
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.form-field select {
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px 9px;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  outline: none;
+}
+
+.form-field select::placeholder {
+  color: var(--primary-color);
+}
+
+.btn-faded-blue {
+  background: #f0f3f9;
+}
+.btn-faded-blue:hover {
+  background: #f0f3f9;
+  color: var(--accent-color);
+}
+
+.ring-result {
+  padding: 40px 32px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.ring-cal-padding {
+  padding: 0 15px;
+}
+
+.ring-cal-p {
+  font-size: 22px;
+  font-family: "Nunito Sans";
+  margin-bottom: 32px;
+}
+
+.ring-cal-result {
+  padding: 51px 20px;
+  background: var(--secondary-font-color);
+  border-radius: 8px;
+  font-size: 44px;
+  font-family: var(--secondary-font-family);
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.ring-cal-btn {
+  width: 100%;
 }
