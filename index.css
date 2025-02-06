@@ -1,0 +1,170 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #f5f0ee;
+  --accent-color: #00254e;
+
+  --primary-font-color: #000815;
+  --secondary-font-color: #ffffff;
+  --primary-font-family: "Nunito Sans";
+  --secondary-font-family: "Unna";
+}
+
+.container {
+  max-width: 1410px;
+  margin: auto;
+}
+.full-width {
+  max-width: 100%;
+}
+
+.bg-blue {
+  background: var(--accent-color);
+}
+
+.bg-pink {
+  background: var(--primary-color);
+}
+
+.mini-container {
+  max-width: 930px;
+  margin: auto;
+}
+.appointments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  color: var(--secondary-font-color);
+  font-family: var(--primary-font-family);
+  font-size: 16px;
+}
+
+.appointments div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.appointments p span {
+  font-weight: 700;
+}
+
+/*--------------Nav Bar-----------------*/
+
+.search-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 350px;
+}
+
+.search-bar {
+  display: flex;
+  background: var(--secondary-font-color);
+  align-items: center;
+  height: 40px;
+  padding: 0 1rem;
+  border-radius: 5px;
+  width: 352px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+  color: var(--primary-font-color);
+  font-family: var(--primary-font-family);
+  font-size: 16px;
+}
+.search-bar input::placeholder {
+  color: var(--primary-font-color);
+}
+
+.search-area {
+  padding: 1rem 0;
+}
+
+.icons i {
+  padding: 16px 12px;
+  font-size: 20px;
+}
+
+.nav-items {
+  margin: auto;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 25px;
+}
+
+.nav-links a {
+  color: var(--primary-font-color);
+  font-family: var(--primary-font-family);
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+/*------------------Banner Area ----------------*/
+
+.jewelery-bg {
+  background: url("./Assets/jewelery.svg");
+  padding: 32px 0;
+}
+
+.home {
+  font-family: var(--primary-font-family);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.home span:first-child {
+  opacity: 0.7;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner h1 {
+  font-size: 44px;
+  font-family: var(--secondary-font-family);
+  font-weight: 400;
+}
+
+.banner p {
+  font-size: 16px;
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  text-align: center;
+  width: 75%;
+}
