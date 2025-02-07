@@ -18,6 +18,7 @@
 
 .container {
   max-width: 1410px;
+  padding: 0 15px;
   margin: auto;
 }
 .full-width {
@@ -53,7 +54,7 @@
 }
 
 .section-spacing {
-  padding: 80px 0;
+  padding: 80px 15px;
 }
 
 .appointments {
@@ -269,6 +270,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 
 .ring-form {
@@ -310,7 +312,7 @@
   font-family: "Nunito Sans";
   font-size: 16px;
   font-weight: 400;
-  padding: 16px 9px;
+  padding: 9px 36px 9px 16px;
   border: 1px solid var(--primary-color);
   border-radius: 8px;
   outline: none;
@@ -322,6 +324,8 @@
 
 .btn-faded-blue {
   background: #f0f3f9;
+  margin-top: 24px;
+  border: none;
 }
 .btn-faded-blue:hover {
   background: #f0f3f9;
@@ -335,10 +339,13 @@
   align-items: center;
   text-align: center;
   border-radius: 8px;
+  height: 100%;
 }
 
 .ring-cal-padding {
   padding: 0 15px;
+  flex: 1;
+  height: 506px;
 }
 
 .ring-cal-p {
@@ -359,4 +366,105 @@
 
 .ring-cal-btn {
   width: 100%;
+}
+
+.ring-btn-margin {
+  margin-top: 48px;
+}
+.ring-cal-p2 {
+  font-family: var(--primary-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 56px;
+  margin-bottom: 16px;
+}
+
+.ring-img img {
+  width: 100%;
+}
+
+.ring-converter-section {
+  margin-bottom: 56px;
+  padding-bottom: 0px;
+}
+
+/*-------------Tabel-------------*/
+
+.border-top {
+  border-top: 1px solid #d9dbdd;
+}
+
+.chart-table {
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.bg-gray-100 {
+  background: #fafafa;
+}
+
+thead li {
+  list-style: none;
+}
+
+thead li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #017bb3;
+  display: inline-block;
+}
+
+thead td {
+  padding: 25px 49px;
+  font-size: 18px;
+  font-family: "Nunito Sans";
+  font-weight: 600;
+}
+
+tbody td {
+  padding: 16.16px 49px;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.py-lg-2 {
+  padding: 8px 0;
+}
+
+.pe-2 {
+  padding-right: 16px;
+}
+.chart-table .table tr td {
+  width: 20%;
+  text-align: center;
+  border-bottom: 0;
+  vertical-align: middle;
+  border-right: 1px solid #d9dbdd;
+}
+
+.chart-table .table tr td:last-child {
+  border-right: none;
+}
+
+.margin-bottom {
+  margin-bottom: 48px;
+}
+
+.banner-bg {
+  height: 470px;
+  background: url("/Assets/ring-wear.webp");
+  background-position: center;
 }
