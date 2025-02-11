@@ -17,7 +17,7 @@
 }
 
 .container {
-  max-width: 1410px;
+  max-width: 1440px;
   padding: 0 15px;
   margin: auto;
 }
@@ -420,6 +420,7 @@ thead li::before {
   border-radius: 50%;
   background: #017bb3;
   display: inline-block;
+  margin-right: 8px;
 }
 
 thead td {
@@ -467,4 +468,68 @@ tbody td {
   height: 470px;
   background: url("/Assets/ring-wear.webp");
   background-position: center;
+}
+
+/*----------------FAQ SECTION-------------------*/
+
+.faq-part {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 15px 0;
+}
+
+.faq-question span {
+  font-size: 16px;
+  font-family: "Nunito Sans";
+  font-weight: 600;
+  transition: all 1s;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq-answer {
+  font-size: 16px;
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  padding: 16px 0 24px 0;
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.5s, max-height 1s ease-out;
+}
+
+.faq {
+  padding-top: 24px;
+  border-bottom: 1px solid #d9dbdd;
+}
+
+.faq.active .faq-question span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.faq-question i {
+  transition: all 1s;
+}
+
+.faq.active .faq-question i {
+  transform: rotate(180deg);
+}
+.faq.active .faq-answer {
+  max-height: 200px;
+  opacity: 1;
+  padding: 15px 0;
+}
+
+.faq-bn {
+  background: var(--primary-color);
+  border: none;
+  margin-top: 24px;
+}
+
+.faq-section {
+  padding-bottom: 16px;
 }
